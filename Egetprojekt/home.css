@@ -1,4 +1,5 @@
 .home{
+    display: grid;
     .gridMain{
         display: grid;
         grid-template-areas: 'main';
@@ -15,11 +16,11 @@
 
     }
 
-.home .gridMain #text p{
-    font-family: serif;
-}
+    .gridMain #text p{
+        font-family: serif;
+    }
 
-
+    
 
 
 
