@@ -1,0 +1,68 @@
+.home{
+    .gridMain{
+        display: grid;
+        grid-template-areas: 'main';
+        place-items: center;
+        .imgBox{
+            grid-area: main;
+            aspect-ratio: 1/1.2;
+        }
+        #text{
+            font-size: 4rem;
+            grid-area: main;
+            color: white;
+        }
+
+    }
+
+.home .gridMain #text p{
+    font-family: serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
