@@ -17,6 +17,7 @@ padding: 4%;
         button{
             background-color: transparent;
             font-size: 2rem;
+            color: black;
         }
         display: grid;
         grid-template-columns: repeat(30,1fr);
@@ -34,6 +35,7 @@ padding: 4%;
         padding: 4%;
         gap: 1rem;
         transition: 1s;
+        
         
     }
 }

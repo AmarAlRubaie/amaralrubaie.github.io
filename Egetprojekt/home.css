@@ -20,6 +20,23 @@
         font-family: serif;
     }
 
+    .product{
+        padding: 4%;
+        display: grid;
+        gap: 1rem;
+    }
+    .productTitle{
+        font-size: 2rem;
+    }
+    .price{
+        font-size: 1.5rem;
+    }
+    .sideScroll .bestSellers p{
+        font-size: 3rem;
+        font-family: serif;
+        text-align: center;
+    }
+
     
 
 
