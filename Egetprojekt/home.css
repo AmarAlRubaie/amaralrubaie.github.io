@@ -1,5 +1,5 @@
 .home{
-    display: grid;
+    
     .gridMain{
         display: grid;
         grid-template-areas: 'main';
@@ -12,6 +12,7 @@
             font-size: 4rem;
             grid-area: main;
             color: white;
+ 
         }
 
     }
@@ -24,6 +25,8 @@
         padding: 4%;
         display: grid;
         gap: 1rem;
+        scroll-snap-align: center;
+        
     }
     .productTitle{
         font-size: 2rem;
@@ -36,50 +39,36 @@
         font-family: serif;
         text-align: center;
     }
+    .sideScroll{
+        display: grid;
+        padding: 3%;
+    }
 
+
+    .box{
+        display: grid;
+        grid-template-columns: repeat(6,70vw);
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+
+        padding: 5%;
+        gap: 1rem;
+    }
     
+}
 
+@media (min-width: 800px){
 
+    .home{
+        .top{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    .box{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
 
 
 
