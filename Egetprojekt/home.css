@@ -20,12 +20,20 @@
     .gridMain #text p{
         font-family: serif;
     }
+    
+    .gridMainStores a p{
+        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    }
 
     .product{
         padding: 4%;
         display: grid;
         gap: 1rem;
         scroll-snap-align: center;
+
+        .imgBox{
+            aspect-ratio: 1/1.2;
+        }
         
     }
     .productTitle{
