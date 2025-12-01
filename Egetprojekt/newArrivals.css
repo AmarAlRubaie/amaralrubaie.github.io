@@ -1,8 +1,7 @@
 .newArrivals *{
- bo-rder: 1px solid black;
+ bor-der: 1px solid black;
 }
 .newArrivals{
-    min-height: 100vh;
     .newArrivalsMainTitle{
         text-align: center;
         font-size: 2.2rem;
@@ -34,12 +33,20 @@
             display: none;
         }
         padding: 5%;
+        gap: 1rem;
     }
     
     .box{
         padding: 5%;
         display: grid;
         gap: 1rem;
+    }
+
+    .newArrivalsMainTitle{
+        display: grid;
+    }
+    .nAMUT{
+        font-size: 1rem;
     }
     
         

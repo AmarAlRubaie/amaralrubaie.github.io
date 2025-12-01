@@ -1,5 +1,6 @@
 @import "home.css";
 @import "newArrivals.css";
+@import "stores.css";
 
 *{
     margin: 0;
@@ -25,6 +26,7 @@ padding: 4%;
 
         .title{
             grid-column: span 28;
+            font-size: 1.5rem;
         }
 
     }

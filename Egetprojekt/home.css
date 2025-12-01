@@ -22,7 +22,7 @@
     }
     
     .gridMainStores a p{
-        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+        text-shadow: -1px -1px #000, 1px -1px  #000, -1px 1px  #000, 1px 1px  #000;
     }
 
     .product{
@@ -76,6 +76,13 @@
     .box{
         grid-template-columns: repeat(3,1fr);
     }
+
+    .gridMainStores{
+        .imgBox{
+            aspect-ratio: 2/1;
+        }
+    }
+    
 }
 
 
