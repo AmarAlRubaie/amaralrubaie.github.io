@@ -1,6 +1,4 @@
-.stores *{
- bor-der: 1px solid black;
-}
+
 .stores{
     .newArrivalsMainTitle{
         text-align: center;
@@ -33,9 +31,9 @@
     }
     
     .box{
-        padding: 5%;
+        padding: 15%;
         display: grid;
-        gap: 1rem;
+        gap: 3rem;
     }
 
     .newArrivalsMainTitle{
@@ -44,12 +42,42 @@
 
     .store{
         display: grid;
-        grid-template-columns: repeat(2,1fr);
+        gap: 1rem;
     }
 
     .storeInfo{
         display: grid;
+        padding: 5%;
     }
+
+    .StoreOpeningHours, .storeContact, .location{
+        display: grid;
+        gap: 0.5rem;
+    }
+
+    .store .imgBox{
+        border-radius: 10px 10px;
+    }
+
+
+
+    @media (min-width: 600px){
+        .storeInfo{
+        padding: 30%;
+        place-items: center;
+        }
+
+        .store .imgBox{
+        aspect-ratio: 1/2;
+        }
+
+        .store{
+        grid-template-columns: repeat(2,1fr);
+        }
+
+    }
+
+
     
     
 

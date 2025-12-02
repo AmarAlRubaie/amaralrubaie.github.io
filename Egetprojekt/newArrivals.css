@@ -1,6 +1,4 @@
-.newArrivals *{
- bor-der: 1px solid black;
-}
+
 .newArrivals{
     .newArrivalsMainTitle{
         text-align: center;
@@ -8,6 +6,8 @@
         place-items: center;
         display: flex;
         justify-content: center;
+        display: grid;
+        gap: 0.5rem;
     }
 
     .product{
@@ -68,6 +68,10 @@
             grid-template-columns: repeat(2,1fr);
             .imgBox{
                 display: grid;
+            }
+
+            .newArrivalsMainTitle{
+                gap: 0rem;
             }
         }
     }
