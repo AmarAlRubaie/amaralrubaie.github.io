@@ -1,0 +1,91 @@
+.productInfo *{
+    border: 1px solid black;
+}
+
+.productInfo{
+
+    display: grid;
+    gap: 1rem;
+
+    .imgBox{
+        aspect-ratio: 1/1.2;
+    }
+    .productTitle{
+        padding: 3%;
+        font-size: 2rem;
+    }
+    .size button p{
+        font-size: 1.3rem;
+    }
+    .size button{
+        width: 90%;
+        background-color: white;
+        border: hidden;
+        box-shadow: 1px 1px 1px 1px black;
+    }
+    .size{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 0.5rem;
+        padding: 5%;
+    }
+    .clotheSize{
+        display: grid;
+        gap: 0.5rem;
+    }
+    .chooseSize{
+        padding-left: 5%;
+    }
+    .color{
+        height: 2rem;
+        border-radius: 50%;
+        overflow: hidden;
+        border: hidden;
+    }
+    .colorBox{
+        display: grid;
+        grid-template-columns: repeat(7,1fr);
+        padding: 5%;
+        gap: 1rem;
+    }
+
+    .color1{
+        background-color: white;
+        border: 1px solid black;
+    }
+    .color2{
+        background-color: black ;
+    }
+    .color3{
+        background-color: grey;
+    }
+    .color4{
+        background-color: beige;
+    }
+    .color5{
+        background-color: rgb(131, 131, 255);
+    }
+    .color6{
+        background-color: green;
+    }
+    .color7{
+        background-color: brown;
+    }
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

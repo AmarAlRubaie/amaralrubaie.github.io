@@ -39,7 +39,8 @@
     .box{
         padding: 5%;
         display: grid;
-        gap: 1rem;
+        gap: 2rem;
+        row-gap: 3rem;
     }
 
     .newArrivalsMainTitle{

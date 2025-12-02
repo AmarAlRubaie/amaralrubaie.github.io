@@ -1,6 +1,7 @@
 @import "home.css";
 @import "newArrivals.css";
 @import "stores.css";
+@import "productInfo.css";
 
 *{
     margin: 0;
