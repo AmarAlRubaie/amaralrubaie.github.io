@@ -53,7 +53,7 @@
     }
 
 
-    .box{
+    .sideScrollBox{
         display: grid;
         grid-template-columns: repeat(6,70vw);
         overflow-x: scroll;
@@ -73,7 +73,7 @@
         grid-template-columns: repeat(2,1fr);
     }
 
-    .box{
+    .sideScrollBox{
         grid-template-columns: repeat(3,1fr);
     }
 

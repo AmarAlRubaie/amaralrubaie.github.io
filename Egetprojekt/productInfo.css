@@ -7,6 +7,15 @@
     display: grid;
     gap: 1rem;
 
+    .sideScrollBoxImg{
+        display: grid;
+        grid-template-columns: repeat(4,100vw);
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+    }
+    .productImg{
+        scroll-snap-align: center;
+    }
     .imgBox{
         aspect-ratio: 1/1.2;
     }
@@ -41,14 +50,19 @@
         border-radius: 50%;
         overflow: hidden;
         border: hidden;
+        aspect-ratio: 1/1;
     }
     .colorBox{
         display: grid;
         grid-template-columns: repeat(7,1fr);
-        padding: 5%;
+        padding-left: 5%;
+        padding-bottom: 3.5%;
+        padding-top: 2.5%;
         gap: 1rem;
+        max-width: 500px;
     }
 
+    
     .color1{
         background-color: white;
         border: 1px solid black;
@@ -70,6 +84,67 @@
     }
     .color7{
         background-color: brown;
+    }
+
+    .addToCart p{
+        font-size: 1rem;
+        color: white;
+    }
+    .addToCart{
+        padding: 2%;
+        background-color: black;
+        width: 90vw;
+    }
+    .addToCartExtra{
+        text-align: center;
+    }
+
+
+    .product{
+        padding: 4%;
+        display: grid;
+        gap: 1rem;
+        scroll-snap-align: center;
+
+        .imgBox{
+            aspect-ratio: 1/1.2;
+        }
+        
+    }
+    .productTitle{
+        font-size: 1.25rem;
+    }
+    .price{
+        font-size: 1rem;
+    }
+    .sideScroll .bestSellers p{
+        font-size: 2rem;
+        font-family: serif;
+        text-align: center;
+    }
+    .sideScroll{
+        display: grid;
+        padding: 3%;
+    }
+    .sideScrollBox{
+        display: grid;
+        grid-template-columns: repeat(6,70vw);
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+
+        padding: 5%;
+        gap: 1rem;
+    }
+    .moreInfo{
+        padding: 5%;
+    }
+    .productInformation{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        button{
+            background-color: transparent;
+            font-size: 1rem;
+        }
     }
     
     
