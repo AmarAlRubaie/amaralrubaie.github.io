@@ -20,6 +20,7 @@ padding: 4%;
             background-color: transparent;
             font-size: 2rem;
             color: black;
+            border: none;
         }
         display: grid;
         grid-template-columns: repeat(30,1fr);
@@ -38,7 +39,6 @@ padding: 4%;
         padding: 4%;
         gap: 1rem;
         transition: 1s;
-        
         
     }
 }

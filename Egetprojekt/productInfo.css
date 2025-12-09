@@ -1,6 +1,3 @@
-.productInfo *{
-    border: 1px solid black;
-}
 
 .productInfo{
 
@@ -58,7 +55,7 @@
         padding-left: 5%;
         padding-bottom: 3.5%;
         padding-top: 2.5%;
-        gap: 1rem;
+        gap: 0.7rem;
         max-width: 500px;
     }
 
@@ -138,29 +135,69 @@
     .moreInfo{
         padding: 5%;
     }
+    .productInformation>p{
+        grid-column: span 5;
+    }
+
     .productInformation{
         display: grid;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(6,1fr);
         button{
             background-color: transparent;
             font-size: 1rem;
+            border: none;
         }
     }
     
-    
-
-
-
-
-
-
-
-
-
-
-
-
+    .materialsUsed{
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        gap: 0.2rem;
+        p{
+            grid-column: span 9;
+        }
+    }
 
 
 
 }
+
+.productInformationClick{
+  
+        display: grid;
+        margin-left: -100vw;
+        height:0;
+        padding: 0%;
+        overflow: hidden;
+        transition: all 1s;
+        
+    }
+
+.productInformationClick>*{
+    max-width: 95vw;
+}
+
+
+.showMore{
+  
+        padding: 2%;
+        gap: 1rem;
+        margin-left: 0;
+
+        height: 220px;
+}
+
+@media (max-width: 574px){
+
+    .showMore{
+        height: 250px;
+    }
+}
+
+@media (max-width: 450px){
+
+    .showMore{
+        height: 300px;
+    }
+}
+

@@ -118,7 +118,16 @@
         <div class="moreInfo">
             <div class="productInformation">
                 <p>Product Information</p>
-                <button>+</button>
+                <button onclick="showMore()">+</button>
+            </div>
+            <div class="productInformationClick">
+                <h4>Men's Stretch Shirts - Formal Stretch Shirt.</h4>
+                <p>Our stretch shirt has been designed with the modern man in mind. Crafted from high quality cotton to allow for full freedom of movement. Whether you're suiting up for a formal event or aiming for a relaxed yet refined look our stretch shirts are the perfect choice.</p>
+                <div class="materialsUsed">
+                    <h4>Material:</h4>
+                    <p>96% Cotton & 4% Spandex.</p>
+        
+                </div>
             </div>
         </div>
 
@@ -297,6 +306,10 @@
 <script>
     function hideNav(){
         document.querySelector("nav").classList.toggle("hidden")
+    }
+
+    function showMore(){
+        document.querySelector(".productInformationClick").classList.toggle("showMore")
     }
 
 </script>
