@@ -91,6 +91,12 @@ header {
             }
         }
 
+        .menuLinks{
+            display: grid;
+
+            
+        }
+
     }
 
 
