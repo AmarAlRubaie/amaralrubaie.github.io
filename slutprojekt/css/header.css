@@ -95,10 +95,11 @@ header {
             
             display: grid;
             gap: 0.5rem;
+            padding: 4%;
 
             .linkBox{
                 
-                display: grid;
+                display: flex;
                 background-color: #F5F1E8;
                 a{
                     text-decoration: none;
