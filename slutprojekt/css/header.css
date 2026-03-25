@@ -92,12 +92,13 @@ header {
         }
 
         .menuLinks{
+            
             display: grid;
+            gap: 0.5rem;
 
             .linkBox{
                 
                 display: grid;
-                gap: 0.5rem;
                 background-color: #F5F1E8;
                 a{
                     text-decoration: none;
