@@ -1,10 +1,10 @@
 header {
 
-    button{
+    button {
         cursor: pointer;
     }
 
-    a{
+    a {
         text-decoration: none;
         cursor: pointer;
         color: black;
@@ -81,11 +81,13 @@ header {
         font-family: serif;
         display: grid;
         gap: 1rem;
-
+        background-color: white;
+        z-index: 3;
         position: fixed;
         width: 85%;
         left: -85%;
         transition: 0.3s;
+        top: 0;
 
         .announcementBox {
             background-color: rgb(235, 191, 88);
@@ -106,43 +108,56 @@ header {
             }
         }
 
-        .menuLinks{
+        .menuLinks {
             display: grid;
             gap: 0.5rem;
 
-            .linkBox{
+            .linkBox {
 
                 color: black;
                 justify-content: space-between;
                 display: flex;
                 background-color: #F5F1E8;
                 padding: 7%;
-                
+
             }
         }
 
     }
 
-    .navStores{
+    .navStores {
 
         display: grid;
         grid-template-areas: 'store';
         place-items: center;
 
-        .imgBox{
+        .imgBox {
             grid-area: store;
             aspect-ratio: 2/1;
         }
 
-        .textBox{
+        .textBox {
             grid-area: store;
             display: grid;
             text-align: center;
             color: white;
+
+            h5 {
+                font-size: 0.6rem;
+            }
+
+            h2 {
+                font-size: 1.2rem;
+            }
         }
     }
 
 
 
 
+}
+
+main {
+    background-color: white;
+    height: 1000px;
 }
