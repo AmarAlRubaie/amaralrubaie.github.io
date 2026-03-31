@@ -107,16 +107,10 @@ header {
         }
 
         .menuLinks{
-<<<<<<< HEAD
-
-=======
-            
->>>>>>> 6f11712256a681fea00512ab1fb5e7fc4696d683
             display: grid;
             gap: 0.5rem;
 
             .linkBox{
-<<<<<<< HEAD
 
                 color: black;
                 justify-content: space-between;
@@ -146,21 +140,6 @@ header {
             text-align: center;
             color: white;
         }
-=======
-                
-                display: flex;
-                background-color: #F5F1E8;
-                padding: 4%;
-                
-                a{
-                    text-decoration: none;
-                    color: black;
-                }
-            }
-            
-        }
-
->>>>>>> 6f11712256a681fea00512ab1fb5e7fc4696d683
     }
 
 
