@@ -1,0 +1,133 @@
+<main class="home">
+
+
+    <div class="sideScroll">
+
+        <div class="bestSeller">
+            <p class="title">Best Sellers 2026</p>
+            <p class="undertitle">
+                Best sellers — timeless essentials, clean silhouettes, and refined smart casual clothing made for
+                effortless everyday dressing.
+            </p>
+        </div>
+
+        <div class="sideScrollBox">
+
+<!--             <div onclick="location.href='.html'" class="product" id="id_6">
+                <div class="imgBox">
+                    <img src="" alt="">
+                </div>
+
+                <div class="productTitle">
+                    <h4></h4>
+                </div>
+                <div class="productDescription">
+                    <p>
+
+                    </p>
+                </div>
+                <div class="price">
+                    <p></p>
+                </div>
+
+            </div> -->
+
+        </div>
+
+
+    </div>
+    <script>
+        const products = [
+  {
+    id: "id_1",
+    title: "Classic White Oxford Shirt",
+    description: "A timeless essential in breathable cotton for everyday refinement.",
+    price: "€79",
+    image: "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=800&q=80",
+    link: "product1.html"
+  },
+  {
+    id: "id_2",
+    title: "Slim Fit Navy Shirt",
+    description: "Clean tailoring with a modern silhouette for smart casual wear.",
+    price: "€89",
+    image: "https://images.unsplash.com/photo-1593030761757-71fae45fa0e7?auto=format&fit=crop&w=800&q=80",
+    link: "product2.html"
+  },
+  {
+    id: "id_3",
+    title: "Beige Linen Shirt",
+    description: "Lightweight linen designed for warm-weather elegance.",
+    price: "€85",
+    image: "https://images.unsplash.com/photo-1626497764746-6dc36546b388?auto=format&fit=crop&w=800&q=80",
+    link: "product3.html"
+  },
+  {
+    id: "id_4",
+    title: "Merino Wool Crewneck Sweater",
+    description: "Soft merino knit with a refined slim fit for layering.",
+    price: "€119",
+    image: "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=800&q=80",
+    link: "product4.html"
+  },
+  {
+    id: "id_5",
+    title: "Half-Zip Knit Sweater",
+    description: "Minimal half-zip design blending comfort and sophistication.",
+    price: "€129",
+    image: "https://images.unsplash.com/photo-1618354691320-14c99e7a1d3c?auto=format&fit=crop&w=800&q=80",
+    link: "product5.html"
+  },
+  {
+    id: "id_6",
+    title: "Light Grey Knit Sweater",
+    description: "Everyday essential knit with a clean Scandinavian feel.",
+    price: "€109",
+    image: "https://images.unsplash.com/photo-1618354691438-25f8b0a1b2f0?auto=format&fit=crop&w=800&q=80",
+    link: "product6.html"
+  },
+  {
+    id: "id_7",
+    title: "Tailored Smart Casual Shirt",
+    description: "Polished cotton shirt designed for modern everyday wear.",
+    price: "€95",
+    image: "https://images.unsplash.com/photo-1602810316498-ab67cf68c8e1?auto=format&fit=crop&w=800&q=80",
+    link: "product7.html"
+  }
+];
+
+
+        const html = products.map(p => {
+
+
+            return `
+                <div onclick="location.href='${p.link}'" class="product" id = "${p.id}">
+                    <div class="imgBox">
+                        <img src="${p.image}" alt="${p.title} img">
+                    </div>
+
+                    <div class="productTitle">
+                        <h4>${p.title}</h4>
+                    </div>
+                    <div class="productDescription">
+                        <p>
+                            ${p.description}
+                        </p>
+                    </div>
+                    <div class="price">
+                        <h5>
+                        ${p.price}    
+                        </h5>
+                    </div>
+
+                </div>
+    
+            `
+
+
+
+        }).join("");
+
+        document.querySelector(".sideScrollBox").innerHTML = html;
+    </script>
+</main>

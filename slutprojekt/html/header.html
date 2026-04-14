@@ -36,7 +36,7 @@
 
 
     <nav>
-
+          <i onclick="hideMenu()" class="material-icons NavButton close" >close</i>
         <a href="springSale.html" class="announcementBox">
             <h5>STEP INTO SPRING</h5>
             <p>UP TO 40% OFF SELECTED STYLES</p>
@@ -49,22 +49,22 @@
                 <i class="material-icons NavButton">arrow_forward</i>
             </a>
 
-            <a href="clothing.html" class="linkBox">
+            <a class="linkBox">
                 <h5>Clothing</h5>
                 <i class="material-icons NavButton">arrow_forward</i>
             </a>
 
-            <a href="accessories.html" class="linkBox">
+            <a class="linkBox">
                 <h5>Accessories</h5>
                 <i class="material-icons NavButton">arrow_forward</i>
             </a>
 
-            <a href="shoes.html" class="linkBox">
+            <a class="linkBox">
                 <h5>Shoes</h5>
                 <i class="material-icons NavButton">arrow_forward</i>
             </a>
 
-            <a href="bags.html" class="linkBox">
+            <a class="linkBox">
                 <h5>Bags</h5>
                 <i class="material-icons NavButton">arrow_forward</i>
             </a>
@@ -82,14 +82,110 @@
         </a>
 
         <div class="navFooter">
+            <div class="customerCare">
 
-            <div class="">
-                <p class="undertitle"></p>
+                <p class="underTitle">CUSTOMER CARE</p>
 
-                <a href=""></a>
+                <div class="linksCus links">
 
+                </div>
+            
             </div>
+                <script>
+                    renderLinks()
+                    function renderLinks(){
+                        const links = [
+                        { name: "Track My Order", url: "track-order.html" },
+                        { name: "Delivery Details", url: "delivery-details.html" },
+                        { name: "Returns & Exchanges", url: "returns-exchanges.html" },
+                        { name: "Contact us", url: "contact.html" },
+                        { name: "FAQ", url: "faq.html" },
+                        { name: "Privacy Policy", url: "privacy-policy.html" },
+                        { name: "Cookie Policy", url: "cookie-policy.html" }
+                        ];
 
+
+                    const html = links.map(a => {
+
+
+                        return `
+                            <a class="links" href="${a.url}"> <h5> ${a.name} </h5> </a>
+                        `
+                        }).join("");
+
+                        document.querySelector(".linksCus").innerHTML = html;
+
+
+                    }
+                </script>
+
+
+            <div class="social">
+
+                <p class="underTitle">SOCIAL</p>
+
+                <div class="linksSocial links">
+
+                </div>
+            
+            </div>
+                <script>
+                    renderLinks()
+                    function renderLinks(){
+                        
+                        const links = [
+                        { name: "Style Guide", url: "style-guide.html" },
+                        { name: "About us", url: "about-us.html" },
+                        { name: "Our Stores", url: "our-stores.html" },
+                        { name: "Career", url: "career.html" },
+                        { name: "Student & Graduate Discount", url: "student-discount.html" },
+                        { name: "Reviews", url: "reviews.html" }
+                        ];
+
+
+                    const html = links.map(a => {
+
+
+                        return `
+                            <a class="links" href="${a.url}"> <h5> ${a.name} </h5> </a>
+                        `
+                        }).join("");
+
+                        document.querySelector(".linksSocial").innerHTML = html;
+
+
+                    }
+                </script>
+
+
+                <div class="customerCare">
+
+                <p class="underTitle">CUSTOMER CARE</p>
+
+                <div class="linksCare links">
+
+                </div>
+            
+            </div>
+                <script>
+                    renderLinks()
+                    function renderLinks(){
+
+
+
+                    const html = links.map(a => {
+
+
+                        return `
+                            <a class="links" href="${a.url}"> <h5> ${a.name} </h5> </a>
+                        `
+                        }).join("");
+
+                        document.querySelector(".linksCare").innerHTML = html;
+
+
+                    }
+                </script>
         </div>
 
     </nav>

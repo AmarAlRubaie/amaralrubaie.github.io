@@ -77,15 +77,19 @@ header {
 
     nav {
 
+        overflow-y: auto;
+        height: 100vh;
+
+
         padding: 7.5%;
         font-family: serif;
         display: grid;
-        gap: 1rem;
+        gap: 2rem;
         background-color: white;
         z-index: 3;
         position: fixed;
-        width: 85%;
-        left: -85%;
+        width: 100%;
+        left: -100%;
         transition: 0.3s;
         top: 0;
 
@@ -119,11 +123,18 @@ header {
                 display: flex;
                 background-color: #F5F1E8;
                 padding: 7%;
+                text-decoration: none;
 
             }
         }
 
-    }
+        .close{
+            position: absolute;
+            right: 5px;
+            top: 5px;
+        }
+
+    } /* end nav */
 
     .navStores {
 
@@ -152,12 +163,28 @@ header {
         }
     }
 
+    .navFooter{
+        display: grid;
+    
+
+        .customerCare{
+            display: grid;
+            gap: 0.5rem;
+
+            p{
+                font-size: 0.7rem;
+                
+            }
+
+            .links{
+                display: grid;
+                gap: 0.5rem;
+                letter-spacing: .05rem;
+            }
+        }
+    }
 
 
 
-}
 
-main {
-    background-color: white;
-    height: 1000px;
 }
