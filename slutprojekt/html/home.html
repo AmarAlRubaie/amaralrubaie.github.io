@@ -1,6 +1,46 @@
 <main class="home">
 
 
+    <div class="gridMain" onclick="location.href='newArrivals.html'">
+
+        <div class="imgBox">
+            <img src="img/b.jpg" alt="">
+        </div>
+
+        <div class="text">
+            <div class="smallText">
+                <h5>NEW ARRIVALS</h5>
+            </div>
+            <div class="mainText">
+                <p>Refined Styles for You</p>
+            </div>
+            <div class="shopNow">
+                <p>SHOP NOW</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="gridMain" onclick="location.href='newArrivals.html'">
+
+        <div class="imgBox">
+            <img src="https://plus.unsplash.com/premium_photo-1727967291566-f9667986d9f9?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+        </div>
+
+        <div class="text">
+            <div class="smallText">
+                <h5>SHOP NOW</h5>
+            </div>
+            <div class="mainText">
+                <p>Discover the latest collection</p>
+            </div>
+            <div class="shopNow">
+                <p>SHOP NOW</p>
+            </div>
+        </div>
+
+    </div>
+
     <div class="sideScroll">
 
         <div class="bestSeller">
@@ -10,10 +50,11 @@
                 effortless everyday dressing.
             </p>
         </div>
+        <div class="morePadding">
 
-        <div class="sideScrollBox">
+            <div class="sideScrollBox">
 
-<!--             <div onclick="location.href='.html'" class="product" id="id_6">
+                <!--             <div onclick="location.href='.html'" class="product" id="id_6">
                 <div class="imgBox">
                     <img src="" alt="">
                 </div>
@@ -32,75 +73,84 @@
 
             </div> -->
 
-        </div>
+            </div>
 
+
+
+        </div>
+    </div>
+    <div class="moreProds">
 
     </div>
     <script>
-        const products = [
-  {
-    id: "id_1",
-    title: "Classic White Oxford Shirt",
-    description: "A timeless essential in breathable cotton for everyday refinement.",
-    price: "€79",
-    image: "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=800&q=80",
-    link: "product1.html"
-  },
-  {
-    id: "id_2",
-    title: "Slim Fit Navy Shirt",
-    description: "Clean tailoring with a modern silhouette for smart casual wear.",
-    price: "€89",
-    image: "https://images.unsplash.com/photo-1593030761757-71fae45fa0e7?auto=format&fit=crop&w=800&q=80",
-    link: "product2.html"
-  },
-  {
-    id: "id_3",
-    title: "Beige Linen Shirt",
-    description: "Lightweight linen designed for warm-weather elegance.",
-    price: "€85",
-    image: "https://images.unsplash.com/photo-1626497764746-6dc36546b388?auto=format&fit=crop&w=800&q=80",
-    link: "product3.html"
-  },
-  {
-    id: "id_4",
-    title: "Merino Wool Crewneck Sweater",
-    description: "Soft merino knit with a refined slim fit for layering.",
-    price: "€119",
-    image: "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=800&q=80",
-    link: "product4.html"
-  },
-  {
-    id: "id_5",
-    title: "Half-Zip Knit Sweater",
-    description: "Minimal half-zip design blending comfort and sophistication.",
-    price: "€129",
-    image: "https://images.unsplash.com/photo-1618354691320-14c99e7a1d3c?auto=format&fit=crop&w=800&q=80",
-    link: "product5.html"
-  },
-  {
-    id: "id_6",
-    title: "Light Grey Knit Sweater",
-    description: "Everyday essential knit with a clean Scandinavian feel.",
-    price: "€109",
-    image: "https://images.unsplash.com/photo-1618354691438-25f8b0a1b2f0?auto=format&fit=crop&w=800&q=80",
-    link: "product6.html"
-  },
-  {
-    id: "id_7",
-    title: "Tailored Smart Casual Shirt",
-    description: "Polished cotton shirt designed for modern everyday wear.",
-    price: "€95",
-    image: "https://images.unsplash.com/photo-1602810316498-ab67cf68c8e1?auto=format&fit=crop&w=800&q=80",
-    link: "product7.html"
-  }
-];
+        mainProd();
+        prod2();
+        function mainProd() {
+
+            const products = [
+                {
+                    id: "id_1",
+                    title: "Classic White Oxford Shirt",
+                    description: "Timeless breathable cotton shirt for everyday wear.",
+                    price: "€79",
+                    image: "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=800&q=80",
+                    link: "product1.html"
+                },
+                {
+                    id: "id_2",
+                    title: "Slim Fit Navy Shirt",
+                    description: "Modern slim fit shirt for smart casual style.",
+                    price: "€89",
+                    image: "https://images.unsplash.com/photo-1593030761757-71fae45fa0e7?auto=format&fit=crop&w=800&q=80",
+                    link: "product2.html"
+                },
+                {
+                    id: "id_3",
+                    title: "Beige Linen Shirt",
+                    description: "Lightweight linen shirt for warm weather comfort.",
+                    price: "€85",
+                    image: "https://images.unsplash.com/photo-1626497764746-6dc36546b388?auto=format&fit=crop&w=800&q=80",
+                    link: "product3.html"
+                },
+                {
+                    id: "id_4",
+                    title: "Merino Wool Crewneck Sweater",
+                    description: "Soft merino sweater ideal for layering.",
+                    price: "€119",
+                    image: "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=800&q=80",
+                    link: "product4.html"
+                },
+                {
+                    id: "id_5",
+                    title: "Half-Zip Knit Sweater",
+                    description: "Minimal half-zip sweater with refined comfort.",
+                    price: "€129",
+                    image: "https://images.unsplash.com/photo-1618354691320-14c99e7a1d3c?auto=format&fit=crop&w=800&q=80",
+                    link: "product5.html"
+                },
+                {
+                    id: "id_6",
+                    title: "Light Grey Knit Sweater",
+                    description: "Clean everyday knit with Scandinavian-inspired style.",
+                    price: "€109",
+                    image: "https://images.unsplash.com/photo-1618354691438-25f8b0a1b2f0?auto=format&fit=crop&w=800&q=80",
+                    link: "product6.html"
+                },
+                {
+                    id: "id_7",
+                    title: "Tailored Smart Casual Shirt",
+                    description: "Polished shirt designed for modern daily wear.",
+                    price: "€95",
+                    image: "https://images.unsplash.com/photo-1602810316498-ab67cf68c8e1?auto=format&fit=crop&w=800&q=80",
+                    link: "product7.html"
+                }
+            ];
 
 
-        const html = products.map(p => {
+            const html = products.map(p => {
 
 
-            return `
+                return `
                 <div onclick="location.href='${p.link}'" class="product" id = "${p.id}">
                     <div class="imgBox">
                         <img src="${p.image}" alt="${p.title} img">
@@ -123,11 +173,87 @@
                 </div>
     
             `
+            }).join("");
+
+            document.querySelector(".sideScrollBox").innerHTML = html;
+        }
+
+        function prod2() {
+            const products = [
+                {
+                    title: "Get a Free Shirt",
+                    image: "https://images.unsplash.com/photo-1621072156002-e2fccdc0b176?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                    link: "suits.html"
+                },
+                {
+                    title: "Suit Deal",
+                    image: "https://images.unsplash.com/photo-1507679799987-c73779587ccf",
+                    link: "suits.html"
+                },
+                {
+                    title: "Summer Linen",
+                    image: "https://images.unsplash.com/photo-1719519290040-89d5e293ef12?q=80&w=743&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                    link: "linen.html"
+                },
+                {
+                    title: "Wedding Season",
+                    image: "https://images.unsplash.com/photo-1604531826248-f0eca8eeb896?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                    link: "suits.html"
+                },
+                {
+                    title: "Trousers",
+                    image: "https://images.unsplash.com/photo-1493357335960-4583bfa6f8d9?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                    link: "trousers.html"
+                },
+                {
+                    title: "Accessories",
+                    image: "https://images.unsplash.com/photo-1774653273863-a689ee748eee?q=80&w=749&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                    link: "accessories.html"
+                },
+                {
+                    title: "Signature Collection",
+                    image: "https://plus.unsplash.com/premium_photo-1679056835084-7f21e64a3402?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                    link: "signature.html"
+                },
+                {
+                    title: "Stores",
+                    image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                    link: "stores.html"
+                }
+            ];
 
 
+            const html = products.map(p => {
 
-        }).join("");
 
-        document.querySelector(".sideScrollBox").innerHTML = html;
+                return `
+                
+                <div class="gridMain2" onclick="location.href='${p.link}'">
+    
+            <div class="imgBox">
+                <img src="${p.image}" alt="">
+            </div>
+
+            <div class="text">
+                <div class="mainText">
+                    <p>${p.title}</p>
+                </div>
+                <div class="shopNow">
+                    <p>SHOP NOW</p>
+                </div>
+            </div>
+                
+            </div>
+    
+            `
+
+            }).join("");
+
+            document.querySelector(".moreProds").innerHTML = html;
+
+        }
+
+
     </script>
+
 </main>

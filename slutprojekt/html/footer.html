@@ -10,11 +10,109 @@
 
     <div class="moreInfo">
         <p class="underTitle">
-
+            Customer care
         </p>
-        <a href="">
-            
-        </a>
+        <div class="linksFooter">
+
+        </div>
+        <script>
+            renderLinks()
+            function renderLinks() {
+
+
+                const links = [
+                    { name: "Track My Order", url: "track-order.html" },
+                    { name: "Delivery Details", url: "delivery-details.html" },
+                    { name: "Returns & Exchanges", url: "returns-exchanges.html" },
+                    { name: "Contact us", url: "contact.html" },
+                    { name: "FAQ", url: "faq.html" },
+                    { name: "Privacy Policy", url: "privacy-policy.html" },
+                    { name: "Cookie Policy", url: "cookie-policy.html" }
+                ];
+
+                const html = links.map(a => {
+
+
+                    return `
+                            <a class="links" href="${a.url}"> <h5> ${a.name} </h5> </a>
+                        `
+                }).join("");
+
+                document.querySelector(".linksFooter").innerHTML = html;
+
+
+            }
+        </script>
+    </div>
+
+    <div class="moreInfo">
+        <p class="underTitle">
+            Social
+        </p>
+        <div class="linksFooter2">
+
+        </div>
+        <script>
+            renderLinks()
+            function renderLinks() {
+
+
+                const links = [
+                    { name: "Style Guide", url: "style-guide.html" },
+                    { name: "About us", url: "about-us.html" },
+                    { name: "Our Stores", url: "our-stores.html" },
+                    { name: "Career", url: "career.html" },
+                    { name: "Student & Graduate Discount", url: "student-discount.html" },
+                    { name: "Reviews", url: "reviews.html" }
+                ];
+
+                const html = links.map(a => {
+
+
+                    return `
+                            <a class="links" href="${a.url}"> <h5> ${a.name} </h5> </a>
+                        `
+                }).join("");
+
+                document.querySelector(".linksFooter2").innerHTML = html;
+
+
+            }
+        </script>
+    </div>
+
+    <div class="moreInfo">
+        <p class="underTitle">
+            Follow us
+        </p>
+        <div class="linksFooter3">
+
+        </div>
+        <script>
+            renderLinks()
+            function renderLinks() {
+
+
+                const links = [
+                    { name: "Facebook", url: "https://www.facebook.com/JohnHenric" },
+                    { name: "Instagram", url: "https://www.instagram.com/johnhenric" },
+                    { name: "Youtube", url: "https://www.youtube.com/c/JohnHenricOfficial" },
+                    { name: "TikTok", url: "https://www.tiktok.com/@johnhenric" }
+                ];
+
+                const html = links.map(a => {
+
+
+                    return `
+                            <a class="links" href="${a.url}"> <h5> ${a.name} </h5> </a>
+                        `
+                }).join("");
+
+                document.querySelector(".linksFooter3").innerHTML = html;
+
+
+            }
+        </script>
     </div>
 
 

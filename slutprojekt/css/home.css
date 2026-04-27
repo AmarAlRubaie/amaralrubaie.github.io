@@ -1,4 +1,106 @@
+
 .home{
+
+    .gridMain{
+
+        display: grid;
+        grid-template-areas: 'a';
+        place-items: center;
+        align-items:flex-end;
+
+        .imgBox{
+            grid-area: a;
+            aspect-ratio: 4/6;
+        }
+
+        .text{
+            
+            color: white;
+            grid-area: a;
+            display: grid;
+            gap: 0.3rem;
+            transform: translateY(-2.8rem) translateX(-4rem);
+        
+            
+
+            .smallText{
+                h5{
+                    font-size: 0.7rem;
+                    letter-spacing: .05rem;
+                    
+                }
+            }
+
+            .mainText{
+                p{
+                    font-size: 1.2rem;
+                    font-family: serif;
+                }
+                
+            }
+
+            .shopNow{
+                font-size: 1.2rem;
+                text-decoration: underline;
+                text-underline-offset: 0.8rem;
+                text-decoration-thickness: 2px;
+                p{
+                    font-family: serif;
+                }
+                
+            }
+        }
+    }
+
+    .gridMain2{
+        display: grid;
+        grid-template-areas: 'a';
+        place-items: center;
+        align-items:flex-end;
+
+        .imgBox{
+            grid-area: a;
+            aspect-ratio: 4/6;
+        }
+
+        .text{
+            
+            color: white;
+            grid-area: a;
+            display: grid;
+            gap: 0.3rem;
+            transform: translateY(-3rem) translateX(-6rem);
+        
+            
+
+            .smallText{
+                h5{
+                    font-size: 0.7rem;
+                    letter-spacing: .05rem;
+                    
+                }
+            }
+
+            .mainText{
+                p{
+                    font-size: 1.2rem;
+                    font-family: serif;
+                }
+                
+            }
+
+            .shopNow{
+                font-size: 1.2rem;
+                text-decoration: underline;
+                text-underline-offset: 0.8rem;
+                text-decoration-thickness: 2px;
+                p{
+                    font-family: serif;
+                }
+                
+            }
+        }
+    }
 
     .sideScroll{
         padding: 4%;
@@ -17,6 +119,23 @@
             .undertitle{
                 font-family: serif;
                 font-size: 1rem;
+            }
+        }
+
+    
+        .sideScrollBox{
+            padding: 5%;
+            display: grid;
+            grid-template-columns: repeat(7,70vw);
+            overflow-x: scroll;
+            scroll-snap-type: x mandatory;
+            gap: 1rem;
+
+            .product{
+                padding: 5%;
+                .imgBox{
+                aspect-ratio: 4/5;
+                }
             }
         }
     }

@@ -30,3 +30,12 @@ img {
     aspect-ratio: 1/1;
     overflow: hidden;
 }
+
+.product{
+    display: grid;
+    gap: 0.5rem;
+    scroll-snap-align: center;
+    .imgBox{
+        aspect-ratio: 4/5;
+    }
+}

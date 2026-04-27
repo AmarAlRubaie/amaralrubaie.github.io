@@ -90,7 +90,7 @@ header {
         position: fixed;
         width: 100%;
         left: -100%;
-        transition: 0.3s;
+        transition: 0.6s;
         top: 0;
 
         .announcementBox {
@@ -165,14 +165,15 @@ header {
 
     .navFooter{
         display: grid;
+        gap: 1rem;
     
 
-        .customerCare{
+        .customerCare, .social, .followUs{
             display: grid;
             gap: 0.5rem;
 
             p{
-                font-size: 0.7rem;
+                font-size: 0.8rem;
                 
             }
 
