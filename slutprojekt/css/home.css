@@ -1,142 +1,217 @@
+.home {
 
-.home{
-
-    .gridMain{
-
-        display: grid;
-        grid-template-areas: 'a';
-        place-items: center;
-        align-items:flex-end;
-
-        .imgBox{
-            grid-area: a;
-            aspect-ratio: 4/6;
-        }
-
-        .text{
-            
-            color: white;
-            grid-area: a;
-            display: grid;
-            gap: 0.3rem;
-            transform: translateY(-2.8rem) translateX(-4rem);
-        
-            
-
-            .smallText{
-                h5{
-                    font-size: 0.7rem;
-                    letter-spacing: .05rem;
-                    
-                }
-            }
-
-            .mainText{
-                p{
-                    font-size: 1.2rem;
-                    font-family: serif;
-                }
-                
-            }
-
-            .shopNow{
-                font-size: 1.2rem;
-                text-decoration: underline;
-                text-underline-offset: 0.8rem;
-                text-decoration-thickness: 2px;
-                p{
-                    font-family: serif;
-                }
-                
-            }
-        }
+    .gridMain .text,
+    .gridMain2 .text {
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
     }
 
-    .gridMain2{
-        display: grid;
-        grid-template-areas: 'a';
-        place-items: center;
-        align-items:flex-end;
 
-        .imgBox{
-            grid-area: a;
-            aspect-ratio: 4/6;
-        }
+        .gridMain {
 
-        .text{
-            
-            color: white;
-            grid-area: a;
             display: grid;
-            gap: 0.3rem;
-            transform: translateY(-3rem) translateX(-6rem);
-        
-            
+            grid-template-areas: 'a';
+            position: relative;
+            align-items: flex-end;
 
-            .smallText{
-                h5{
-                    font-size: 0.7rem;
-                    letter-spacing: .05rem;
-                    
-                }
+            .imgBox {
+                grid-area: a;
+                aspect-ratio: 4/6;
+                width: 100%;
             }
 
-            .mainText{
-                p{
+            .text {
+
+                color: white;
+                grid-area: a;
+                display: grid;
+                gap: 0.3rem;
+
+
+
+
+                .smallText {
+                    h5 {
+                        font-size: 0.7rem;
+                        letter-spacing: .05rem;
+
+                    }
+                }
+
+                .mainText {
+                    p {
+                        font-size: 1.2rem;
+                        font-family: serif;
+                    }
+
+                }
+
+                .shopNow {
                     font-size: 1.2rem;
-                    font-family: serif;
+                    text-decoration: underline;
+                    text-underline-offset: 0.8rem;
+                    text-decoration-thickness: 2px;
+
+                    p {
+                        font-family: serif;
+                    }
+
                 }
-                
             }
 
-            .shopNow{
-                font-size: 1.2rem;
-                text-decoration: underline;
-                text-underline-offset: 0.8rem;
-                text-decoration-thickness: 2px;
-                p{
-                    font-family: serif;
+
+        }
+
+        .gridMain2 {
+            display: grid;
+            grid-template-areas: 'a';
+            position: relative;
+            align-items: flex-end;
+
+            .imgBox {
+                grid-area: a;
+                aspect-ratio: 4/6;
+                width: 100%;
+            }
+
+            .text {
+
+                color: white;
+                grid-area: a;
+                display: grid;
+                gap: 0.3rem;
+
+                align-items: center;
+
+
+
+                .smallText {
+                    h5 {
+                        font-size: 0.7rem;
+                        letter-spacing: .05rem;
+
+                    }
                 }
-                
+
+                .mainText {
+                    p {
+                        font-size: 1.2rem;
+                        font-family: serif;
+                    }
+
+                }
+
+                .shopNow {
+                    font-size: 1.2rem;
+                    text-decoration: underline;
+                    text-underline-offset: 0.8rem;
+                    text-decoration-thickness: 2px;
+
+                    p {
+                        font-family: serif;
+                    }
+
+                }
             }
         }
-    }
 
-    .sideScroll{
-        padding: 4%;
-
-        .bestSeller{
-            display: grid;
-            text-align: center;
-            gap: 0.5rem;
+        .sideScroll {
             padding: 4%;
-            .title{
-                font-size: 1.5rem ;
-                font-family: serif ;
-                letter-spacing: .05rem;
+
+            .bestSeller {
+                display: grid;
+                text-align: center;
+                gap: 0.5rem;
+                padding: 4%;
+
+                .title {
+                    font-size: 1.5rem;
+                    font-family: serif;
+                    letter-spacing: .05rem;
+                }
+
+                .undertitle {
+                    font-family: serif;
+                    font-size: 1rem;
+                }
             }
 
-            .undertitle{
-                font-family: serif;
-                font-size: 1rem;
-            }
-        }
 
-    
-        .sideScrollBox{
-            padding: 5%;
-            display: grid;
-            grid-template-columns: repeat(7,70vw);
-            overflow-x: scroll;
-            scroll-snap-type: x mandatory;
-            gap: 1rem;
-
-            .product{
+            .sideScrollBox {
                 padding: 5%;
-                .imgBox{
-                aspect-ratio: 4/5;
+                display: grid;
+                grid-template-columns: repeat(7, 70vw);
+                overflow-x: scroll;
+                scroll-snap-type: x mandatory;
+                gap: 1rem;
+
+                .product {
+                    padding: 5%;
+
+                    .imgBox {
+                        aspect-ratio: 4/5;
+                    }
                 }
             }
         }
     }
-}
+
+    @media (min-width: 500px) {
+        .gridMainBox {
+
+            .gridMain .text {}
+        }
+
+        .moreProds {
+
+            .gridMain2 .text {}
+
+        }
+    }
+
+    @media (min-width: 700px) {
+        .gridMainBox {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+
+            .gridMain .text {}
+        }
+
+        .moreProds {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+
+            .gridMain2 .text {}
+
+            .gridMain2:last-child {
+                grid-column: span 3;
+
+                .imgBox {
+                    aspect-ratio: 3 / 1;
+                    width: 100%;
+                }
+
+                .text {}
+            }
+
+        }
+    }
+
+    @media (min-width: 1300px) {
+        .gridMainBox {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-column: span 1;
+
+            .gridMain .text {}
+        }
+
+        .moreProds {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+
+            .gridMain2 .text {}
+
+        }
+    }
