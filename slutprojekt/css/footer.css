@@ -48,3 +48,26 @@ footer {
         }
     }
 }
+
+@media(min-width: 800px){
+    footer{
+        padding: 5%;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        place-items: center;
+
+        .moreInfoBox{
+            grid-column: span 3;
+        }
+    }
+}
+
+@media(min-width: 700px){
+    footer{
+        .moreInfoBox{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 3rem;
+        }
+    }
+}

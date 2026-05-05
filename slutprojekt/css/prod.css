@@ -1,0 +1,56 @@
+.productsMain {
+    .filters {
+        padding: 5%;
+        display: grid;
+        grid-template-columns: repeat(5, 7rem);
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+        gap: 1rem;
+
+        button {
+            scroll-snap-align: center;
+            background-color: transparent;
+            border: 0.5px solid rgb(201, 201, 201);
+            shape-outside: none;
+            font-size: 1rem;
+            padding: 1%;
+            padding-block: 5%;
+        }
+    }
+
+    .prodBox {
+
+        padding: 5%;
+        display: grid;
+        gap: 0.7rem;
+        grid-template-columns: repeat(2, 1fr);
+
+        .product {
+            container: box / inline-size;
+            display: grid;
+            gap: 0.5rem;
+
+            .imgBox {
+                aspect-ratio: 4/5;
+            }
+        }
+    }
+}
+
+@container box (inline-size < 150px) {
+
+    .productsMain {
+        .product {
+
+            .productTitle,
+            .productDescription,
+            .price {
+                display: none;
+            }
+        }
+    }
+
+    .productsMain .prodBox .product .imgBox {
+        aspect-ratio: 3 / 5;
+    }
+}

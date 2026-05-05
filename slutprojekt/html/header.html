@@ -2,7 +2,7 @@
 
     <div class="announcement-bar">
 
-        <a href="springSale.html">
+        <a hx-get="html/prod.html" hx-target="main">
             <h1>SPRING SALE <span></span> — <span></span> ENJOY UP TO 40% OFF SELECTED STYLES</h1>
         </a>
 
@@ -20,8 +20,32 @@
 
         <div class="logo">
 
-            <a href="index.html">
+            <a hx-get="html/home.html" hx-target="main">
                 <p>JOHN HENRIC</p>
+            </a>
+
+        </div>
+
+        <div class="menuLinks" id="display">
+
+            <a href="newArrivals.html" class="linkBox">
+                <h5>New Arrivals</h5>
+            </a>
+
+            <a class="linkBox">
+                <h5>Clothing</h5>
+            </a>
+
+            <a class="linkBox">
+                <h5>Accessories</h5>
+            </a>
+
+            <a class="linkBox">
+                <h5>Shoes</h5>
+            </a>
+
+            <a class="linkBox">
+                <h5>Bags</h5>
             </a>
 
         </div>
@@ -36,7 +60,7 @@
 
 
     <nav>
-          <i onclick="hideMenu()" class="material-icons NavButton close" >close</i>
+        <i onclick="hideMenu()" class="material-icons NavButton close">close</i>
         <a href="springSale.html" class="announcementBox">
             <h5>STEP INTO SPRING</h5>
             <p>UP TO 40% OFF SELECTED STYLES</p>
@@ -89,12 +113,12 @@
                 <div class="linksCus links">
 
                 </div>
-            
+
             </div>
-                <script>
-                    renderLinks()
-                    function renderLinks(){
-                        const links = [
+            <script>
+                renderLinks()
+                function renderLinks() {
+                    const links = [
                         { name: "Track My Order", url: "track-order.html" },
                         { name: "Delivery Details", url: "delivery-details.html" },
                         { name: "Returns & Exchanges", url: "returns-exchanges.html" },
@@ -102,7 +126,7 @@
                         { name: "FAQ", url: "faq.html" },
                         { name: "Privacy Policy", url: "privacy-policy.html" },
                         { name: "Cookie Policy", url: "cookie-policy.html" }
-                        ];
+                    ];
 
 
                     const html = links.map(a => {
@@ -111,13 +135,13 @@
                         return `
                             <a class="links" href="${a.url}"> <h5> ${a.name} </h5> </a>
                         `
-                        }).join("");
+                    }).join("");
 
-                        document.querySelector(".linksCus").innerHTML = html;
+                    document.querySelector(".linksCus").innerHTML = html;
 
 
-                    }
-                </script>
+                }
+            </script>
 
 
             <div class="social">
@@ -127,20 +151,20 @@
                 <div class="linksSocial links">
 
                 </div>
-            
+
             </div>
-                <script>
-                    renderLinks()
-                    function renderLinks(){
-                        
-                        const links = [
+            <script>
+                renderLinks()
+                function renderLinks() {
+
+                    const links = [
                         { name: "Style Guide", url: "style-guide.html" },
                         { name: "About us", url: "about-us.html" },
                         { name: "Our Stores", url: "our-stores.html" },
                         { name: "Career", url: "career.html" },
                         { name: "Student & Graduate Discount", url: "student-discount.html" },
                         { name: "Reviews", url: "reviews.html" }
-                        ];
+                    ];
 
 
                     const html = links.map(a => {
@@ -149,34 +173,34 @@
                         return `
                             <a class="links" href="${a.url}"> <h5> ${a.name} </h5> </a>
                         `
-                        }).join("");
+                    }).join("");
 
-                        document.querySelector(".linksSocial").innerHTML = html;
-
-
-                    }
-                </script>
+                    document.querySelector(".linksSocial").innerHTML = html;
 
 
-                <div class="followUs">
+                }
+            </script>
+
+
+            <div class="followUs">
 
                 <p class="underTitle">FOLLOW US</p>
 
                 <div class="linksCare links">
 
                 </div>
-            
+
             </div>
-                <script>
-                    renderLinks()
-                    function renderLinks(){
+            <script>
+                renderLinks()
+                function renderLinks() {
 
 
-                        const links = [
-                    { name: "Facebook", url: "https://www.facebook.com/JohnHenric" },
-                    { name: "Instagram", url: "https://www.instagram.com/johnhenric" },
-                    { name: "Youtube", url: "https://www.youtube.com/c/JohnHenricOfficial" },
-                    { name: "TikTok", url: "https://www.tiktok.com/@johnhenric" }
+                    const links = [
+                        { name: "Facebook", url: "https://www.facebook.com/JohnHenric" },
+                        { name: "Instagram", url: "https://www.instagram.com/johnhenric" },
+                        { name: "Youtube", url: "https://www.youtube.com/c/JohnHenricOfficial" },
+                        { name: "TikTok", url: "https://www.tiktok.com/@johnhenric" }
                     ];
 
                     const html = links.map(a => {
@@ -185,13 +209,13 @@
                         return `
                             <a class="links" href="${a.url}"> <h5> ${a.name} </h5> </a>
                         `
-                        }).join("");
+                    }).join("");
 
-                        document.querySelector(".linksCare").innerHTML = html;
+                    document.querySelector(".linksCare").innerHTML = html;
 
 
-                    }
-                </script>
+                }
+            </script>
         </div>
 
     </nav>

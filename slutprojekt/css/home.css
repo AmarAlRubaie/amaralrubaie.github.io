@@ -141,7 +141,7 @@
             .sideScrollBox {
                 padding: 5%;
                 display: grid;
-                grid-template-columns: repeat(7, 70vw);
+                grid-template-columns: repeat(6, 50vw);
                 overflow-x: scroll;
                 scroll-snap-type: x mandatory;
                 gap: 1rem;
@@ -157,61 +157,35 @@
         }
     }
 
-    @media (min-width: 500px) {
-        .gridMainBox {
-
-            .gridMain .text {}
-        }
-
-        .moreProds {
-
-            .gridMain2 .text {}
-
-        }
-    }
-
     @media (min-width: 700px) {
         .gridMainBox {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
+            gap: 0.3rem;
 
-            .gridMain .text {}
+        }
+
+        .home .sideScroll .sideScrollBox{
+            overflow-x: none;
+            scroll-snap-type: none;
+            grid-template-columns: repeat(3,1fr);
+            display: grid;
         }
 
         .moreProds {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-
-            .gridMain2 .text {}
+            gap: 0.3rem;
 
             .gridMain2:last-child {
                 grid-column: span 3;
 
-                .imgBox {
+                .imgBox{
                     aspect-ratio: 3 / 1;
                     width: 100%;
                 }
-
-                .text {}
             }
 
         }
     }
 
-    @media (min-width: 1300px) {
-        .gridMainBox {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-column: span 1;
-
-            .gridMain .text {}
-        }
-
-        .moreProds {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-
-            .gridMain2 .text {}
-
-        }
-    }

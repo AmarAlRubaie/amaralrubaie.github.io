@@ -1,0 +1,786 @@
+<main class="productsMain">
+
+    <div class="filters">
+        <button>New Arrivals</button>
+        <button>Clothing</button>
+        <button>Accessories</button>
+        <button>Shoes</button>
+        <button>Bags</button>
+    </div>
+
+    <div class="prodBox">
+
+    </div>
+
+    <script>
+        prods()
+        function prods() {
+
+            const products = [
+                {
+                    id: "id_21",
+                    class: "clothing bestSeller",
+                    title: "Taupe Linen Trousers",
+                    description: "Relaxed fit trousers crafted from breathable linen.",
+                    price: "€110",
+                    image: "https://images.pexels.com/photos/6311392/pexels-photo-6311392.jpeg",
+                    link: "product21.html"
+                },
+                {
+                    id: "id_22",
+                    class: "accessories",
+                    title: "Brown Leather Belt",
+                    description: "Classic belt made from smooth genuine leather.",
+                    price: "€49",
+                    image: "https://images.pexels.com/photos/45055/pexels-photo-45055.jpeg",
+                    link: "product22.html"
+                },
+                {
+                    id: "id_23",
+                    class: "shoes",
+                    title: "White Leather Sneakers",
+                    description: "Minimal sneakers with premium leather finish.",
+                    price: "€139",
+                    image: "https://images.pexels.com/photos/2529148/pexels-photo-2529148.jpeg",
+                    link: "product23.html"
+                },
+                {
+                    id: "id_24",
+                    class: "clothing springSale",
+                    title: "Sky Blue Linen Shirt",
+                    description: "Lightweight shirt perfect for warm weather days.",
+                    price: "€79",
+                    image: "https://images.pexels.com/photos/428340/pexels-photo-428340.jpeg",
+                    link: "product24.html"
+                },
+                {
+                    id: "id_25",
+                    class: "bags",
+                    title: "Black Leather Weekender",
+                    description: "Spacious travel bag with a sleek design.",
+                    price: "€249",
+                    image: "https://images.pexels.com/photos/1152077/pexels-photo-1152077.jpeg",
+                    link: "product25.html"
+                },
+                {
+                    id: "id_26",
+                    class: "clothing",
+                    title: "Slim Fit Black Shirt",
+                    description: "Tailored black shirt with a sharp silhouette.",
+                    price: "€85",
+                    image: "https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg",
+                    link: "product26.html"
+                },
+                {
+                    id: "id_27",
+                    class: "accessories bestSeller",
+                    title: "Silver Minimal Watch",
+                    description: "Elegant timepiece with a clean dial design.",
+                    price: "€159",
+                    image: "https://images.pexels.com/photos/277390/pexels-photo-277390.jpeg",
+                    link: "product27.html"
+                },
+                {
+                    id: "id_28",
+                    class: "clothing",
+                    title: "Navy Tailored Pants",
+                    description: "Modern slim pants for everyday wear.",
+                    price: "€95",
+                    image: "https://images.pexels.com/photos/5698851/pexels-photo-5698851.jpeg",
+                    link: "product28.html"
+                },
+                {
+                    id: "id_29",
+                    class: "shoes",
+                    title: "Brown Suede Loafers",
+                    description: "Soft suede loafers with a refined finish.",
+                    price: "€145",
+                    image: "https://images.pexels.com/photos/267301/pexels-photo-267301.jpeg",
+                    link: "product29.html"
+                },
+                {
+                    id: "id_30",
+                    class: "clothing",
+                    title: "White Relaxed T-Shirt",
+                    description: "Soft cotton t-shirt with a modern relaxed fit.",
+                    price: "€35",
+                    image: "https://images.pexels.com/photos/1002640/pexels-photo-1002640.jpeg",
+                    link: "product30.html"
+                },
+
+                {
+                    id: "id_31",
+                    class: "clothing",
+                    title: "Olive Field Jacket",
+                    description: "Lightweight jacket with utility-inspired details.",
+                    price: "€165",
+                    image: "https://images.pexels.com/photos/1124465/pexels-photo-1124465.jpeg",
+                    link: "product31.html"
+                },
+                {
+                    id: "id_32",
+                    class: "accessories",
+                    title: "Black Sunglasses",
+                    description: "Timeless sunglasses with UV protection.",
+                    price: "€59",
+                    image: "https://images.pexels.com/photos/46710/pexels-photo-46710.jpeg",
+                    link: "product32.html"
+                },
+                {
+                    id: "id_33",
+                    class: "bags",
+                    title: "Canvas Tote Bag",
+                    description: "Durable tote for everyday essentials.",
+                    price: "€45",
+                    image: "https://images.pexels.com/photos/1152077/pexels-photo-1152077.jpeg?2",
+                    link: "product33.html"
+                },
+                {
+                    id: "id_34",
+                    class: "clothing",
+                    title: "Beige Knit Polo",
+                    description: "Soft knit polo with a refined texture.",
+                    price: "€89",
+                    image: "https://images.pexels.com/photos/298863/pexels-photo-298863.jpeg",
+                    link: "product34.html"
+                },
+                {
+                    id: "id_35",
+                    class: "shoes bestSeller",
+                    title: "Black Leather Chelsea Boots",
+                    description: "Classic boots with elastic side panels.",
+                    price: "€179",
+                    image: "https://images.pexels.com/photos/19090/pexels-photo.jpg",
+                    link: "product35.html"
+                },
+
+                {
+                    id: "id_36",
+                    class: "clothing",
+                    title: "Grey Zip Hoodie",
+                    description: "Comfortable hoodie with a clean design.",
+                    price: "€79",
+                    image: "https://images.pexels.com/photos/6311642/pexels-photo-6311642.jpeg",
+                    link: "product36.html"
+                },
+                {
+                    id: "id_37",
+                    class: "clothing springSale",
+                    title: "Light Blue Linen Shorts",
+                    description: "Breathable shorts ideal for summer days.",
+                    price: "€65",
+                    image: "https://images.pexels.com/photos/5325587/pexels-photo-5325587.jpeg",
+                    link: "product37.html"
+                },
+                {
+                    id: "id_38",
+                    class: "accessories",
+                    title: "Leather Card Holder",
+                    description: "Compact card holder in smooth leather.",
+                    price: "€39",
+                    image: "https://images.pexels.com/photos/164527/pexels-photo-164527.jpeg",
+                    link: "product38.html"
+                },
+                {
+                    id: "id_39",
+                    class: "clothing",
+                    title: "Dark Green Overshirt",
+                    description: "Layering essential with a structured fit.",
+                    price: "€120",
+                    image: "https://images.pexels.com/photos/6311613/pexels-photo-6311613.jpeg",
+                    link: "product39.html"
+                },
+                {
+                    id: "id_40",
+                    class: "shoes",
+                    title: "Minimal White Trainers",
+                    description: "Clean trainers for everyday wear.",
+                    price: "€125",
+                    image: "https://images.pexels.com/photos/2529148/pexels-photo-2529148.jpeg?2",
+                    link: "product40.html"
+                },
+                {
+                    id: "id_41",
+                    class: "clothing",
+                    title: "Stone Linen Shirt",
+                    description: "Breathable linen shirt with a relaxed summer feel.",
+                    price: "€82",
+                    image: "https://images.pexels.com/photos/6311475/pexels-photo-6311475.jpeg",
+                    link: "product41.html"
+                },
+                {
+                    id: "id_42",
+                    class: "accessories",
+                    title: "Minimal Leather Wallet",
+                    description: "Slim wallet crafted from smooth leather.",
+                    price: "€55",
+                    image: "https://images.pexels.com/photos/2079249/pexels-photo-2079249.jpeg",
+                    link: "product42.html"
+                },
+                {
+                    id: "id_43",
+                    class: "shoes",
+                    title: "Beige Suede Sneakers",
+                    description: "Soft suede sneakers with a refined profile.",
+                    price: "€135",
+                    image: "https://images.pexels.com/photos/19090/pexels-photo.jpg",
+                    link: "product43.html"
+                },
+                {
+                    id: "id_44",
+                    class: "clothing springSale",
+                    title: "Light Grey Blazer",
+                    description: "Lightweight blazer for a polished summer look.",
+                    price: "€195",
+                    image: "https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg",
+                    link: "product44.html"
+                },
+                {
+                    id: "id_45",
+                    class: "bags",
+                    title: "Brown Weekend Bag",
+                    description: "Spacious bag ideal for short trips.",
+                    price: "€230",
+                    image: "https://images.pexels.com/photos/1152077/pexels-photo-1152077.jpeg",
+                    link: "product45.html"
+                },
+                {
+                    id: "id_46",
+                    class: "clothing",
+                    title: "White Slim Polo",
+                    description: "Clean polo shirt with a tailored fit.",
+                    price: "€62",
+                    image: "https://images.pexels.com/photos/298863/pexels-photo-298863.jpeg",
+                    link: "product46.html"
+                },
+                {
+                    id: "id_47",
+                    class: "accessories",
+                    title: "Gold Frame Sunglasses",
+                    description: "Elegant frames with a modern silhouette.",
+                    price: "€65",
+                    image: "https://images.pexels.com/photos/46710/pexels-photo-46710.jpeg",
+                    link: "product47.html"
+                },
+                {
+                    id: "id_48",
+                    class: "clothing bestSeller",
+                    title: "Charcoal Slim Trousers",
+                    description: "Tailored trousers with a modern silhouette.",
+                    price: "€105",
+                    image: "https://images.pexels.com/photos/6311392/pexels-photo-6311392.jpeg",
+                    link: "product48.html"
+                },
+                {
+                    id: "id_49",
+                    class: "shoes",
+                    title: "Classic White Trainers",
+                    description: "Versatile trainers with a clean finish.",
+                    price: "€120",
+                    image: "https://images.pexels.com/photos/2529148/pexels-photo-2529148.jpeg",
+                    link: "product49.html"
+                },
+                {
+                    id: "id_50",
+                    class: "clothing",
+                    title: "Soft Cotton Crewneck",
+                    description: "Everyday essential with premium comfort.",
+                    price: "€70",
+                    image: "https://images.pexels.com/photos/6311642/pexels-photo-6311642.jpeg",
+                    link: "product50.html"
+                },
+
+                {
+                    id: "id_51",
+                    class: "clothing",
+                    title: "Sand Tailored Shorts",
+                    description: "Modern shorts designed for summer wear.",
+                    price: "€68",
+                    image: "https://images.pexels.com/photos/5325587/pexels-photo-5325587.jpeg",
+                    link: "product51.html"
+                },
+                {
+                    id: "id_52",
+                    class: "accessories bestSeller",
+                    title: "Classic Steel Watch",
+                    description: "Timeless design with a minimalist dial.",
+                    price: "€170",
+                    image: "https://images.pexels.com/photos/277390/pexels-photo-277390.jpeg",
+                    link: "product52.html"
+                },
+                {
+                    id: "id_53",
+                    class: "clothing",
+                    title: "Blue Oxford Shirt",
+                    description: "Crisp cotton shirt for everyday elegance.",
+                    price: "€78",
+                    image: "https://images.pexels.com/photos/428340/pexels-photo-428340.jpeg",
+                    link: "product53.html"
+                },
+                {
+                    id: "id_54",
+                    class: "bags",
+                    title: "Black Minimal Backpack",
+                    description: "Sleek backpack with functional compartments.",
+                    price: "€140",
+                    image: "https://images.pexels.com/photos/2905238/pexels-photo-2905238.jpeg",
+                    link: "product54.html"
+                },
+                {
+                    id: "id_55",
+                    class: "clothing",
+                    title: "Dark Navy Overshirt",
+                    description: "Versatile layering piece with a modern cut.",
+                    price: "€125",
+                    image: "https://images.pexels.com/photos/6311613/pexels-photo-6311613.jpeg",
+                    link: "product55.html"
+                },
+
+                {
+                    id: "id_56",
+                    class: "shoes",
+                    title: "Brown Leather Sneakers",
+                    description: "Premium sneakers with a refined touch.",
+                    price: "€145",
+                    image: "https://images.pexels.com/photos/267301/pexels-photo-267301.jpeg",
+                    link: "product56.html"
+                },
+                {
+                    id: "id_57",
+                    class: "clothing",
+                    title: "White Relaxed Shirt",
+                    description: "Casual shirt with a soft, breathable feel.",
+                    price: "€74",
+                    image: "https://images.pexels.com/photos/1040945/pexels-photo-1040945.jpeg",
+                    link: "product57.html"
+                },
+                {
+                    id: "id_58",
+                    class: "accessories",
+                    title: "Black Leather Bracelet",
+                    description: "Minimal bracelet with a clean design.",
+                    price: "€29",
+                    image: "https://images.pexels.com/photos/164527/pexels-photo-164527.jpeg",
+                    link: "product58.html"
+                },
+                {
+                    id: "id_59",
+                    class: "clothing springSale",
+                    title: "Light Beige Blazer",
+                    description: "Tailored blazer with a summer-ready finish.",
+                    price: "€185",
+                    image: "https://images.pexels.com/photos/1124465/pexels-photo-1124465.jpeg",
+                    link: "product59.html"
+                },
+                {
+                    id: "id_60",
+                    class: "clothing",
+                    title: "Grey Cotton T-Shirt",
+                    description: "Soft cotton essential with a refined fit.",
+                    price: "€39",
+                    image: "https://images.pexels.com/photos/1002640/pexels-photo-1002640.jpeg",
+                    link: "product60.html"
+                },
+
+                {
+                    id: "id_61",
+                    class: "clothing",
+                    title: "Olive Chino Shorts",
+                    description: "Relaxed shorts with a tailored finish.",
+                    price: "€65",
+                    image: "https://images.pexels.com/photos/6311475/pexels-photo-6311475.jpeg",
+                    link: "product61.html"
+                },
+                {
+                    id: "id_62",
+                    class: "accessories",
+                    title: "Brown Leather Gloves",
+                    description: "Soft leather gloves with a premium feel.",
+                    price: "€75",
+                    image: "https://images.pexels.com/photos/45055/pexels-photo-45055.jpeg",
+                    link: "product62.html"
+                },
+                {
+                    id: "id_63",
+                    class: "shoes",
+                    title: "Black Formal Shoes",
+                    description: "Elegant shoes for formal occasions.",
+                    price: "€160",
+                    image: "https://images.pexels.com/photos/19090/pexels-photo.jpg",
+                    link: "product63.html"
+                },
+                {
+                    id: "id_64",
+                    class: "clothing",
+                    title: "Navy Zip Jacket",
+                    description: "Light jacket with a clean modern look.",
+                    price: "€135",
+                    image: "https://images.pexels.com/photos/6311642/pexels-photo-6311642.jpeg",
+                    link: "product64.html"
+                },
+                {
+                    id: "id_65",
+                    class: "bags",
+                    title: "Canvas Travel Bag",
+                    description: "Durable bag for everyday travel.",
+                    price: "€120",
+                    image: "https://images.pexels.com/photos/1152077/pexels-photo-1152077.jpeg",
+                    link: "product65.html"
+                },
+
+                {
+                    id: "id_66",
+                    class: "clothing",
+                    title: "Beige Crewneck Sweater",
+                    description: "Soft knit sweater for everyday wear.",
+                    price: "€92",
+                    image: "https://images.pexels.com/photos/298863/pexels-photo-298863.jpeg",
+                    link: "product66.html"
+                },
+                {
+                    id: "id_67",
+                    class: "accessories",
+                    title: "Minimal Silver Ring",
+                    description: "Simple ring with a polished finish.",
+                    price: "€35",
+                    image: "https://images.pexels.com/photos/164527/pexels-photo-164527.jpeg",
+                    link: "product67.html"
+                },
+                {
+                    id: "id_68",
+                    class: "clothing",
+                    title: "White Linen Overshirt",
+                    description: "Lightweight layer for warm evenings.",
+                    price: "€115",
+                    image: "https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg",
+                    link: "product68.html"
+                },
+                {
+                    id: "id_69",
+                    class: "shoes",
+                    title: "Grey Running Sneakers",
+                    description: "Comfort-focused sneakers with modern design.",
+                    price: "€110",
+                    image: "https://images.pexels.com/photos/2529148/pexels-photo-2529148.jpeg",
+                    link: "product69.html"
+                },
+                {
+                    id: "id_70",
+                    class: "clothing",
+                    title: "Black Slim Jeans",
+                    description: "Modern denim with a tailored fit.",
+                    price: "€105",
+                    image: "https://images.pexels.com/photos/1598505/pexels-photo-1598505.jpeg",
+                    link: "product70.html"
+                },
+
+                {
+                    id: "id_71",
+                    class: "clothing",
+                    title: "Light Blue Polo Shirt",
+                    description: "Clean polo with a soft cotton feel.",
+                    price: "€60",
+                    image: "https://images.pexels.com/photos/428340/pexels-photo-428340.jpeg",
+                    link: "product71.html"
+                },
+                {
+                    id: "id_72",
+                    class: "accessories",
+                    title: "Leather Key Holder",
+                    description: "Compact holder for everyday essentials.",
+                    price: "€28",
+                    image: "https://images.pexels.com/photos/2079249/pexels-photo-2079249.jpeg",
+                    link: "product72.html"
+                },
+                {
+                    id: "id_73",
+                    class: "clothing",
+                    title: "Sand Linen Trousers",
+                    description: "Breathable trousers for summer styling.",
+                    price: "€108",
+                    image: "https://images.pexels.com/photos/6311392/pexels-photo-6311392.jpeg",
+                    link: "product73.html"
+                },
+                {
+                    id: "id_74",
+                    class: "shoes",
+                    title: "White Slip-On Sneakers",
+                    description: "Easy slip-on design with a clean finish.",
+                    price: "€115",
+                    image: "https://images.pexels.com/photos/267301/pexels-photo-267301.jpeg",
+                    link: "product74.html"
+                },
+                {
+                    id: "id_75",
+                    class: "clothing",
+                    title: "Grey Structured Blazer",
+                    description: "Tailored blazer with a modern silhouette.",
+                    price: "€205",
+                    image: "https://images.pexels.com/photos/1124465/pexels-photo-1124465.jpeg",
+                    link: "product75.html"
+                },
+
+                {
+                    id: "id_76",
+                    class: "bags",
+                    title: "Minimal Black Tote",
+                    description: "Clean tote bag with structured design.",
+                    price: "€95",
+                    image: "https://images.pexels.com/photos/2905238/pexels-photo-2905238.jpeg",
+                    link: "product76.html"
+                },
+                {
+                    id: "id_77",
+                    class: "clothing",
+                    title: "White Tailored Shirt",
+                    description: "Sharp shirt designed for a perfect fit.",
+                    price: "€88",
+                    image: "https://images.pexels.com/photos/1040945/pexels-photo-1040945.jpeg",
+                    link: "product77.html"
+                },
+                {
+                    id: "id_78",
+                    class: "accessories",
+                    title: "Black Minimal Cap",
+                    description: "Simple cap with a clean design.",
+                    price: "€25",
+                    image: "https://images.pexels.com/photos/6311613/pexels-photo-6311613.jpeg",
+                    link: "product78.html"
+                },
+                {
+                    id: "id_79",
+                    class: "clothing",
+                    title: "Olive Cotton Shirt",
+                    description: "Casual shirt with a soft texture.",
+                    price: "€76",
+                    image: "https://images.pexels.com/photos/6311475/pexels-photo-6311475.jpeg",
+                    link: "product79.html"
+                },
+                {
+                    id: "id_80",
+                    class: "shoes",
+                    title: "Brown Classic Loafers",
+                    description: "Timeless loafers with a polished finish.",
+                    price: "€150",
+                    image: "https://images.pexels.com/photos/19090/pexels-photo.jpg",
+                    link: "product80.html"
+                },
+
+                {
+                    id: "id_81",
+                    class: "clothing",
+                    title: "Light Grey Shirt",
+                    description: "Versatile shirt with a modern fit.",
+                    price: "€72",
+                    image: "https://images.pexels.com/photos/428340/pexels-photo-428340.jpeg",
+                    link: "product81.html"
+                },
+                {
+                    id: "id_82",
+                    class: "accessories",
+                    title: "Silver Chain Bracelet",
+                    description: "Minimal bracelet with polished finish.",
+                    price: "€40",
+                    image: "https://images.pexels.com/photos/164527/pexels-photo-164527.jpeg",
+                    link: "product82.html"
+                },
+                {
+                    id: "id_83",
+                    class: "clothing",
+                    title: "Beige Summer Shorts",
+                    description: "Lightweight shorts for warm days.",
+                    price: "€64",
+                    image: "https://images.pexels.com/photos/5325587/pexels-photo-5325587.jpeg",
+                    link: "product83.html"
+                },
+                {
+                    id: "id_84",
+                    class: "shoes",
+                    title: "Black Minimal Trainers",
+                    description: "Modern trainers with a sleek profile.",
+                    price: "€130",
+                    image: "https://images.pexels.com/photos/2529148/pexels-photo-2529148.jpeg",
+                    link: "product84.html"
+                },
+                {
+                    id: "id_85",
+                    class: "clothing",
+                    title: "Navy Cotton Blazer",
+                    description: "Structured blazer with a refined finish.",
+                    price: "€210",
+                    image: "https://images.pexels.com/photos/1124465/pexels-photo-1124465.jpeg",
+                    link: "product85.html"
+                },
+
+                {
+                    id: "id_86",
+                    class: "bags",
+                    title: "Brown Leather Backpack",
+                    description: "Premium backpack with classic design.",
+                    price: "€260",
+                    image: "https://images.pexels.com/photos/2905238/pexels-photo-2905238.jpeg",
+                    link: "product86.html"
+                },
+                {
+                    id: "id_87",
+                    class: "clothing",
+                    title: "White Basic Tee",
+                    description: "Essential t-shirt with a clean cut.",
+                    price: "€35",
+                    image: "https://images.pexels.com/photos/1002640/pexels-photo-1002640.jpeg",
+                    link: "product87.html"
+                },
+                {
+                    id: "id_88",
+                    class: "accessories",
+                    title: "Minimal Black Watch",
+                    description: "Elegant watch with a dark dial.",
+                    price: "€155",
+                    image: "https://images.pexels.com/photos/277390/pexels-photo-277390.jpeg",
+                    link: "product88.html"
+                },
+                {
+                    id: "id_89",
+                    class: "clothing",
+                    title: "Blue Casual Shirt",
+                    description: "Soft shirt for relaxed everyday wear.",
+                    price: "€74",
+                    image: "https://images.pexels.com/photos/1040945/pexels-photo-1040945.jpeg",
+                    link: "product89.html"
+                },
+                {
+                    id: "id_90",
+                    class: "shoes",
+                    title: "White Low-Top Sneakers",
+                    description: "Minimal sneakers with a clean finish.",
+                    price: "€118",
+                    image: "https://images.pexels.com/photos/267301/pexels-photo-267301.jpeg",
+                    link: "product90.html"
+                },
+
+                {
+                    id: "id_91",
+                    class: "clothing",
+                    title: "Sand Linen Shirt",
+                    description: "Lightweight linen shirt for summer days.",
+                    price: "€82",
+                    image: "https://images.pexels.com/photos/6311475/pexels-photo-6311475.jpeg",
+                    link: "product91.html"
+                },
+                {
+                    id: "id_92",
+                    class: "accessories",
+                    title: "Brown Leather Strap Watch",
+                    description: "Classic watch with a leather strap.",
+                    price: "€165",
+                    image: "https://images.pexels.com/photos/277390/pexels-photo-277390.jpeg",
+                    link: "product92.html"
+                },
+                {
+                    id: "id_93",
+                    class: "clothing",
+                    title: "Grey Tailored Pants",
+                    description: "Refined trousers with a slim silhouette.",
+                    price: "€108",
+                    image: "https://images.pexels.com/photos/6311392/pexels-photo-6311392.jpeg",
+                    link: "product93.html"
+                },
+                {
+                    id: "id_94",
+                    class: "shoes",
+                    title: "Black Slip-On Shoes",
+                    description: "Effortless style with a sleek design.",
+                    price: "€135",
+                    image: "https://images.pexels.com/photos/19090/pexels-photo.jpg",
+                    link: "product94.html"
+                },
+                {
+                    id: "id_95",
+                    class: "clothing",
+                    title: "Navy Relaxed Shirt",
+                    description: "Casual shirt with a soft finish.",
+                    price: "€76",
+                    image: "https://images.pexels.com/photos/428340/pexels-photo-428340.jpeg",
+                    link: "product95.html"
+                },
+
+                {
+                    id: "id_96",
+                    class: "bags",
+                    title: "Minimal Travel Backpack",
+                    description: "Functional design for daily use.",
+                    price: "€145",
+                    image: "https://images.pexels.com/photos/2905238/pexels-photo-2905238.jpeg",
+                    link: "product96.html"
+                },
+                {
+                    id: "id_97",
+                    class: "clothing",
+                    title: "White Stretch Shirt",
+                    description: "Comfort stretch fabric with a tailored fit.",
+                    price: "€90",
+                    image: "https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg",
+                    link: "product97.html"
+                },
+                {
+                    id: "id_98",
+                    class: "accessories",
+                    title: "Minimal Leather Bracelet",
+                    description: "Clean design with subtle detailing.",
+                    price: "€32",
+                    image: "https://images.pexels.com/photos/164527/pexels-photo-164527.jpeg",
+                    link: "product98.html"
+                },
+                {
+                    id: "id_99",
+                    class: "clothing",
+                    title: "Light Blue Summer Shirt",
+                    description: "Breathable shirt with a relaxed feel.",
+                    price: "€78",
+                    image: "https://images.pexels.com/photos/428340/pexels-photo-428340.jpeg",
+                    link: "product99.html"
+                },
+                {
+                    id: "id_100",
+                    class: "clothing bestSeller",
+                    title: "Classic White Shirt",
+                    description: "Timeless shirt with a refined silhouette.",
+                    price: "€89",
+                    image: "https://images.pexels.com/photos/1040945/pexels-photo-1040945.jpeg",
+                    link: "product100.html"
+                }
+            ];
+
+
+            const html = products.map(p => {
+
+
+                return `
+                <div onclick="location.href='${p.link}'" class="product ${p.class}" id = "${p.id}">
+                    <div class="imgBox">
+                        <img src="${p.image}" alt="${p.title} img">
+                    </div>
+
+                    <div class="productTitle">
+                        <h4>${p.title}</h4>
+                    </div>
+                    <div class="productDescription">
+                        <p>
+                            ${p.description}
+                        </p>
+                    </div>
+                    <div class="price">
+                        <h5>
+                        ${p.price}    
+                        </h5>
+                    </div>
+
+                </div>
+    
+            `
+            }).join("");
+
+            document.querySelector(".prodBox").innerHTML = html;
+        }
+    </script>
+</main>

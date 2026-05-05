@@ -11,4 +11,3 @@ function hideMenu() {
     document.querySelector("div.announcement-bar").classList.remove("darkerMain");
     document.querySelector("div.top").classList.remove("darkerMain");
 }
-

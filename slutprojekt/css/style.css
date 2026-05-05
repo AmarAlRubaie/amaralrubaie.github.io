@@ -1,6 +1,7 @@
 @import url("header.css");
 @import url("footer.css");
 @import url("home.css");
+@import url("prod.css");
 
 * {
     margin: 0;
@@ -13,10 +14,8 @@
     left: 0%;
     right: 0%;
 }
-
-.darkerMain{
-    background-color: rgba(0, 0, 0, 0.4);
- 
+.hidden{
+    display: none;
 }
 
 img {
