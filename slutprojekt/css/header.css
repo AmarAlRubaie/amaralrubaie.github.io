@@ -80,6 +80,12 @@ header {
 
     }
 
+    .placeholder {
+        width: 60%;
+        font-size: 1rem;
+        padding: 0%;
+    }
+
     nav {
 
         overflow-y: auto;
@@ -198,23 +204,23 @@ header {
 @media (min-width: 1000px) {
     header {
 
-        .announcement-bar{
+        .announcement-bar {
             padding: 1%;
         }
 
         .top .menuLinks {
 
             display: grid;
-            grid-template-columns: repeat(5,1fr);
+            grid-template-columns: repeat(5, 1fr);
             place-items: center;
 
-            
+
         }
 
-        .top{
-            .icons{
-                button{
-                    .menu{
+        .top {
+            .icons {
+                button {
+                    .menu {
                         display: none;
                     }
                 }

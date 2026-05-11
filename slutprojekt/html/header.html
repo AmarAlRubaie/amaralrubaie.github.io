@@ -14,7 +14,7 @@
 
             <button onclick="toggleMenu()"> <i class="material-icons topButton menu">menu</i></button>
 
-            <button> <i class="material-icons topButton search">search</i></button>
+            <button onclick="displayPlaceholder()"> <i class="material-icons topButton search">search</i></button>
 
         </div>
 
@@ -55,6 +55,8 @@
             <button> <i class="material-icons topButton shoppingCart">shopping_cart</i></button>
 
         </div>
+
+        <input class="placeholder hidden"  onkeyup="contentSearch(this.value)" type="text" name="x" placeholder="Sök">
 
     </div>
 

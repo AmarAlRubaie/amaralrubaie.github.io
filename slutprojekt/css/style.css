@@ -14,9 +14,7 @@
     left: 0%;
     right: 0%;
 }
-.hidden{
-    display: none;
-}
+
 
 img {
     height: 100%;
@@ -30,11 +28,16 @@ img {
     overflow: hidden;
 }
 
-.product{
+.product {
     display: grid;
     gap: 0.5rem;
     scroll-snap-align: center;
-    .imgBox{
+
+    .imgBox {
         aspect-ratio: 4/5;
     }
+}
+
+.hidden {
+    display: none;
 }
